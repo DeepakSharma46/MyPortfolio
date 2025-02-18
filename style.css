@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    color: goldenrod !important;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    .navbar-nav {
+        a {
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: goldenrod !important;
+            scale: 1.1;
+        }
+
+    }
+}
+
+.section-1 {
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/pixelcut-export.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 10%;
+    /* background-size: ; */
+    background-size: cover;
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.sub-intro {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkmagenta;
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px grey;
+
+}
+
+.myprof {
+    /* filter: drop-shadow(2px 2px 2px grey); */
+    box-shadow: 10px 10px 10px goldenrod;
+    border-radius: 50%;
+
+}
+.progress{
+height: 20px;
+width:70%;
+}
+.skills{
+margin-top: 100px;
+}
+.services{
+margin-top: 80px;
+}
+.item,.item-project{
+    height: 300px;
+    width:300px;
+    border: 2px solid rgba(139, 112, 112,0.4);
+    border-radius: 10px 10px;
+    margin:5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* transition: all ease-in-out 4s; */
+
+    .web-dev{
+        display: none;
+    }
+    
+}
+.item:hover{
+box-shadow: 5px 5px 5px gray;
+}
+.item-project{
+    height: 400px;
+    width:600px;
+}
+.item:hover{
+display:block;
+img{
+    transform: scale(0.6);
+}
+.web-dev{
+    margin-top: -30px;
+    display:block;
+   
+}
+}
+.contact{
+width: 100%;
+height:700px;
+form{
+    width: 500px;
+    background-color: rgb(211, 218, 224);
+    border-radius: 10px;
+    padding:40px;
+    font-family: 'Times New Roman', Times, serif;
+    dd{
+        input{
+            border-radius: 8px 8px;
+            padding:10px;
+            width: 80%;
+            border: none;
+        }
+        textarea{
+            border-radius: 10px 10px;
+            width:70%;
+            font-family: Georgia, 'Times New Roman', Times, serif;font-style: italic;
+        }
+    }
+}
+
+}
