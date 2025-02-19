@@ -220,9 +220,11 @@
                         <dt>Enter Full Name</dt>
                         <dd><input type="text" className="form-control" name="full name" required/></dd>
                         <dt>Enter Email</dt>
-                        <dd><input type="email" className="form-control" name="email" required /></dd>
+                        <dd><input type="email" className="form-control" name="email" required   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                            title="Enter a valid email address (e.g., example@mail.com)" /></dd>
                         <dt>Phone</dt>
-                        <dd><input type="text" className="form-control" name="phone" required /></dd>
+                        <dd><input type="text" className="form-control" name="phone" required  pattern="^\d{10}$" 
+                            title="Enter a valid 10-digit phone number"/></dd>
                         <dt>Write a Message</dt>
                         <dd>
                             <textarea class="p-1" name="Message" id="" rows="6" placeholder="Your Valuable Feedback Here"></textarea>
